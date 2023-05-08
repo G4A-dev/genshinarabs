@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>G4Arabs</title>
+        <title>Genshin4Arabs</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     </head>
     <body>
-        <div class="navbar">
+        <div class="navbar" id="main">
             <nav>
-                <h2 class="logo">G4Arabs</h2>
+                <h2 class="logo">Genshin4Arabs</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#">US</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#main" style="font-size: 24px;">الرئيسية</a></li>
+                    <li><a href="#about" style="font-size: 24px;">عنا</a></li>
+                    <li><a href="#" style="font-size: 24px;" >نحن</a></li>
                 </ul>
                 <a href="https://discord.genshinarabs.com" class="btn">Discord</a>
             </nav>
@@ -32,8 +32,7 @@
 
         <!-- about section -->
         <section class="about">
-            <div class="main">
-
+            <div class="main" id="about">
                 <iframe src="https://discord.com/widget?id=794289565350756393&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                 <div class="about-text">
                     <h2>about us</h2>
@@ -42,9 +41,100 @@
                 </div>
             </div>
         </section>
-
-        <!-- US section -->
         
+        <section class="team">
+            <div class="slider">
+                <input type="radio" name="testimonial" id="t-1">
+                <input type="radio" name="testimonial" id="t-2">
+                <input type="radio" name="testimonial" id="t-3" checked>
+                <input type="radio" name="testimonial" id="t-4">
+                <input type="radio" name="testimonial" id="t-5">
+                <div class="testimonials">
+                    <label class="item" for="t-1">
+                        <h1>1</h1>
+                    </label>
+                    <label class="item" for="t-2">
+                        <img class="pfp" src="https://cdn.discordapp.com/avatars/469872662961979403/904c6765f2c2bd3dc4369bc2e009f994.png">
+                        <h1>Kel</h1>
+                        <h2>Programmer</h2>
+                    </label>
+                    <label class="item" for="t-3">
+                        <img class="pfp" src="https://cdn.discordapp.com/avatars/600657292114919456/dc9a2101132ce66a8b3fd97a562d788e.png">
+                        <h1>MILKSHAKE</h1>
+                        <h2>The Owner</h2>
+                    </label>
+                    <label class="item" for="t-4">
+                        <img class="pfp" src="https://cdn.discordapp.com/guilds/794289565350756393/users/545976156416114698/avatars/a_81809a4c1925ee18156bf3149a0ec38f.png">
+                        <h1>Ash</h1>
+                        <h2>Leader</h2>
+                    </label>
+                    <label class="item" for="t-5">
+                        <h1>5</h2>
+                    </label>
+                    <!-- <label class="item" for="t-6">
+                        <h1>6</h2>
+                    </label>
+                    <label class="item" for="t-7">
+                        <h1>7</h2>
+                    </label>
+                    <label class="item" for="t-8">
+                        <h1>8</h2>
+                    </label>
+                    <label class="item" for="t-9">
+                        <h1>9</h2>
+                    </label>
+                    <label class="item" for="t-10">
+                        <h1>10</h2>
+                    </label>
+                    <label class="item" for="t-11">
+                        <h1>5</h2>
+                    </label>
+                    <label class="item" for="t-12">
+                        <h1>5</h2>
+                    </label>
+                    <label class="item" for="t-13">
+                        <h1>5</h2>
+                    </label>
+                    <label class="item" for="t-14">
+                        <h1>5</h2>
+                    </label>
+                    <label class="item" for="t-15">
+                        <h1>5</h2>
+                    </label>
+                    <label class="item" for="t-16">
+                        <h1>5</h2>
+                    </label>
+                    <label class="item" for="t-17">
+                        <h1>5</h2>
+                    </label>
+                    <label class="item" for="t-18">
+                        <h1>5</h2>
+                    </label> -->
+                </div>
+                <br/>
+                <div class="dots">
+                    <label for="t-1"></label>
+                    <label for="t-2"></label>
+                    <label for="t-3"></label>
+                    <label for="t-4"></label>
+                    <label for="t-5"></label>
+                    <!-- <label for="t-6"></label>
+                    <label for="t-7"></label>
+                    <label for="t-8"></label>
+                    <label for="t-9"></label>
+                    <label for="t-10"></label>
+                    <label for="t-11"></label>
+                    <label for="t-12"></label>
+                    <label for="t-13"></label>
+                    <label for="t-14"></label>
+                    <label for="t-15"></label>
+                    <label for="t-16"></label>
+                    <label for="t-17"></label>
+                    <label for="t-18"></label> -->
+                </div>
+            </div>
+        </section>
 
+        <script src="scripts/main.js"></script>
     </body>
 </html>
