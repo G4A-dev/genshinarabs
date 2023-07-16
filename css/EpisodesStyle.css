@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+   }
+h1 {
+    color: #fff;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4 {
+    color: rgba(255, 255, 255);
+    font-size: 23px;
+}
+.body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/ViewerWallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/MainWallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo {
+    color:white;
+    font-size: 35px;
+    cursor: pointer;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover {
+    color: lightskyblue;
+    transition: .4s;
+}
