@@ -102,8 +102,8 @@ nav ul li a:hover {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    background-color: none;
     justify-content: space-around;
-    position: fixed;
     z-index: 999;
     padding: 10px 50px;
 
