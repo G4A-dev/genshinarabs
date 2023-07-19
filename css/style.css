@@ -64,9 +64,30 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
+    
+}
+nav ul li a p{
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
+}
+
+nav ul li a p::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: lightskyblue;
+    transition: width 0.25s ease-out;
+}
+nav ul li a p:hover::before{
+    width: 100%;
 }
 nav ul li a:hover {
     color: lightskyblue;
+    text-underline-offset: lightskyblue;
     transition: .4s;
 }
 .btn {
