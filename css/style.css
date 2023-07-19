@@ -47,8 +47,8 @@ nav {
     padding: 10px 50px;
 }
 nav.shadow {
-    background-color: rgba(0, 0, 0, 0.61);
-    
+    background-color: rgba(0, 0, 0, 0.335);
+    height: 87px;
     backdrop-filter: blur(5px);
 }
 nav ul li {
