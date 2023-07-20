@@ -44,10 +44,13 @@ nav {
     justify-content:space-between;
     padding: 10px 50px;
 }
-.logo {
-    color:white;
-    font-size: 35px;
-    cursor: pointer;
+.soc a {
+    margin-left: 1px;
+    font-size: 1.3em;
+    padding: 0%;
+}
+.soc :hover{
+    transform: scale(1.1);
 }
 nav ul li {
     list-style-type: none;
