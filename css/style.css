@@ -117,6 +117,27 @@ nav ul li a:hover {
     left: 8%;
     transform: translateY(-50%)
 }
+
+.adcon {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.adim {
+    width: 400px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.59);
+    backdrop-filter: blur(5px);
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.4s;
+    box-shadow: 0px 4px 4px #82b46193;
+}
+
 .about {
     width: 100%;
     padding: 100px 0px;
