@@ -30,7 +30,6 @@ h4 {
 .content{
     text-shadow: rgba(255, 255, 255, 0.394) 1px 0 10px;
 }
-
 .navbar {
     height: 100vh;
     width: 100%;
@@ -59,7 +58,7 @@ nav {
 }
 nav.shadow {
     background-color: rgba(0, 0, 0, 0.335);
-    height: 87px;
+    height: 86px;
     backdrop-filter: blur(5px);
 }
 nav ul li {
@@ -137,14 +136,36 @@ nav ul li a:hover {
     transition: all 0.4s;
     box-shadow: 0px 4px 4px #82b46193;
 }
-
-.about {
+.about{
+    background-color: #2f1b21;
     width: 100%;
-    padding: 100px 0px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/AboutWallpaper.jpg");;
+    height: 85vh;
     background-size: cover;
     background-position: center;
 }
+
+.g4acontent {
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.774),rgba(0, 0, 0, 0.624)) , url("../images/AboutWallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.g4acontent li {
+    display: flex;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+.g4acontent li a{
+    list-style: circle;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+.aboug4acontent li :hover{
+    color: lightskyblue;
+}
+
 .team {
     width: 100%;
     padding: 100px 0px;
@@ -163,8 +184,7 @@ nav ul li a:hover {
     background-color: none;
     justify-content: space-around;
     z-index: 999;
-    padding: 10px 50px;
-
+    padding: 45px 50px;
 }
 .about-text h2{
     color: white;
@@ -302,4 +322,32 @@ button:hover {
 #t-5:checked ~ .testimonials label[for="t-5"]{
 	
 	z-index: 4;
+}
+@media screen and (max-width: 400px) {
+    .logo{
+        width: 100px;
+        height: 50px;
+    }
+    h1 {
+        margin: 10px 0px 10px;
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+    h4 {
+        font-size: 13px;
+    }
+    .navbar {
+        height: 37vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .soc a {
+        margin-left: 1px;
+        font-size: 0.9em;
+        padding: 0%;
+    }
 }
