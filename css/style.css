@@ -71,14 +71,12 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
-    
 }
 nav ul li a p{
     display: inline-block;
     padding-bottom: 0.25rem;
     position: relative;
 }
-
 nav ul li a p::before{
     content: "";
     position: absolute;
@@ -96,6 +94,9 @@ nav ul li a:hover {
     color: lightskyblue;
     text-underline-offset: lightskyblue;
     transition: .4s;
+}
+.navbar ul li a{
+    font-size: 24px;
 }
 .btn {
     background-color:lightskyblue;
@@ -325,8 +326,8 @@ button:hover {
 }
 @media screen and (max-width: 400px) {
     .logo{
-        width: 100px;
-        height: 50px;
+        width: 90px;
+        height: 40px;
     }
     h1 {
         margin: 10px 0px 10px;
@@ -349,5 +350,30 @@ button:hover {
         margin-left: 1px;
         font-size: 0.9em;
         padding: 0%;
+    }
+    nav {
+    width: 50%;
+    position: fixed;
+    align-items: center;
+    justify-content:space-between;
+    padding: 5px 25px;
+    height: 46px;
+    z-index: 1000;
+    transition: 1s linear;
+    }
+    nav ul li {
+    padding: 5px 15px;
+    }
+    nav ul li a p{
+    display: inline-block;
+    padding-bottom: 0.15rem;
+    position: relative;
+    }
+    .content {
+        font-size: 20px;
+    }
+    .navbar ul li a{
+        font-size: 12px;
+
     }
 }
