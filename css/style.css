@@ -360,22 +360,17 @@ button:hover {
         padding: 0%;
     }
     nav {
-    width: 50%;
-    position: fixed;
-    align-items: center;
-    padding: 5px 25px;
-    height: 46px;
-    z-index: 1000;
-    transition: 1s linear;
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1px 5px;
     }
     .navbar ul {
         margin: 0.em;
-
     }
     nav ul li {
     padding: 5px 15px;
-
     }
     nav ul li a p{
     display: inline-block;
@@ -409,6 +404,25 @@ button:hover {
         width: 100%;
         background-size: cover;
         background-position: center;
+    }
+    .about-text {
+        width: 550px;
+    }
+    .about-text h2{
+        color: white;
+        font-size: 19px;
+        text-transform: capitalize;
+        margin-bottom: 2px;
+    }
+    .about-text p{
+        color: white;
+        line-height: 28px;
+        height: 8px;
+        font-size: 1px;
+        margin-bottom: 45px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: justify;
     }
 
 }
