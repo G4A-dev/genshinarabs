@@ -349,7 +349,7 @@ button:hover {
         font-size: 11px;
     }
     .navbar {
-        height: 37vh;
+        height: 39vh;
         width: 100%;
         background-size: cover;
         background-position: center;
@@ -363,7 +363,6 @@ button:hover {
     width: 50%;
     position: fixed;
     align-items: center;
-    justify-content:space-between;
     padding: 5px 25px;
     height: 46px;
     z-index: 1000;
@@ -390,7 +389,30 @@ button:hover {
 
     }
     .content {
-        height: 69vh;
+        height: 68vh;
     }
-    
+    .about {
+        height: 39vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .about .iframe{
+        width: 177px;
+        height: 6px;
+
+    }
+    .g4acontent {
+        height: 39vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .team {
+        height: 39vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
 }
