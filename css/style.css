@@ -367,6 +367,7 @@ button:hover {
     height: 46px;
     z-index: 1000;
     transition: 1s linear;
+    display: flex;
     }
     .navbar ul {
         margin: 0.em;
@@ -396,11 +397,6 @@ button:hover {
         width: 100%;
         background-size: cover;
         background-position: center;
-    }
-    .about .iframe{
-        width: 177px;
-        height: 6px;
-
     }
     .g4acontent {
         height: 39vh;
