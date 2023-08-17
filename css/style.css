@@ -43,14 +43,6 @@ h4 {
     background-size: cover;
     background-position: center;
 }
-.soc a {
-    margin-left: 1px;
-    font-size: 1.3em;
-    padding: 0%;
-}
-.soc :hover{
-    transform: scale(1.1);
-}
 nav {
     display: flex;
     width: 100%;
@@ -139,11 +131,97 @@ nav ul li a:hover {
 .about{
     background-color: #2f1b21;
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     background-size: cover;
     background-position: center;
 }
-
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #1a1d24;
+  color: #fff;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+a {
+  color: inherit;
+}
+/* General styles end*/
+.navsoc {
+  max-width: 80rem;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.navsoc:hover {
+  pointer-events: auto;
+}
+.sm-header {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.line {
+  width: 15rem;
+  height: 3px;
+  background-color: #fff;
+  margin-left: 2rem;
+  margin-right: auto;
+  transform: scaleX(0.2);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.navsoc:hover .line {
+  transform: scaleX(1);
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav-item {
+  margin-inline: 2.5rem;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.nav-item:nth-child(odd) {
+  transform: translateY(5rem);
+}
+.nav-item:nth-child(even) {
+  transform: translateY(-5rem);
+}
+.navsoc:hover .nav-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+.nav-link {
+  font-size: 3.6rem;
+}
+.nav-link i {
+  transition: color 0.5s;
+}
+.nav-link:hover i.fa-instagram {
+  color: #3b5998;
+}
+.nav-link:hover i.fa-discord {
+  color: #1da1f2;
+}
+.nav-link:hover i.fa-tiktok {
+  color: #dd4b39;
+}
+.nav-link:hover i.fa-tumblr {
+  color: #ea4c89;
+}
 .g4acontent {
     height: 90vh;
     width: 100%;
@@ -165,7 +243,6 @@ nav ul li a:hover {
 .aboug4acontent li :hover{
     color: lightskyblue;
 }
-
 .team {
     width: 100%;
     padding: 100px 0px;
@@ -198,28 +275,13 @@ nav ul li a:hover {
     height: 89px;
     font-size: 18px;
     margin-bottom: 45px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
     text-align: justify;
 }
 .line1 {
     stroke-width: 0.1px;
     stroke: #FFF;
-}
-button {
-    background-color: lightskyblue;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: .4s;
-}
-button:hover {
-    background-color: transparent;
-    border: 2px solid lightskyblue;
-    cursor: pointer;
 }
 .slider{width: 100%}
 .slider input{display: none;}
@@ -331,7 +393,7 @@ button:hover {
 	
 	z-index: 4;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .logo{
         width: 90px;
         height: 40px;
@@ -359,30 +421,30 @@ button:hover {
         font-size: 0.9em;
         padding: 0%;
     }
-    nav {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content:space-between;
-    padding: 1px 5px;
+    nav ul li a p{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content:space-between;
+        padding: 1px 5px;
+        
     }
     .navbar ul {
         margin: 0.em;
     }
     nav ul li {
-    padding: 5px 15px;
+        padding: 5px 2px;
     }
     nav ul li a p{
-    display: inline-block;
-    padding-bottom: 0.15rem;
-    position: relative;
+        display: inline-block;
+        padding-bottom: 0.15rem;
+        position: relative;
     }
     .content {
         font-size: 20px;
     }
     .navbar ul li a{
         font-size: 12px;
-
     }
     .content {
         height: 68vh;
@@ -423,6 +485,9 @@ button:hover {
         font-weight: 400;
         line-height: normal;
         text-align: justify;
+    }
+    .line1 {
+        width: 0.1;
     }
 
 }
